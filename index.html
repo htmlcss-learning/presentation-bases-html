@@ -51,6 +51,11 @@ Autre exemple sympathique : http://k-legrand.fr
 	<link rel="stylesheet" href="css/theme/cours.css" id="theme">
 	<!-- For syntax highlighting -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+        mark.highlight-block {
+            background-color: rgba(250, 248, 255, 0.2);
+        }
+    </style>
 </head>
 <body>
   <!-- <div class="lesBricodeursImage">
@@ -66,6 +71,19 @@ Autre exemple sympathique : http://k-legrand.fr
 					<small> - créé par Samy Rabih</small>
 				</p>
       </section>
+        <section>
+            <h2>C'est ça</h2>
+            <pre>
+<code class="html">&#x3C;!doctype html&#x3E;
+&#x3C;html lang=&#x22;fr&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+    &#x3C;title&#x3E;Mon premier document&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;</code></pre>
+        </section>
      <section>
 			<h1>Généralités</h1>
 			<p>Le HTML structure</p>
@@ -338,6 +356,58 @@ du HTML?</h1>
                 <p>WordPress, Drupal</p>
 			</section>
 		</section>
+        <section>
+            <section>
+                <h1>Allons y ensemble !</h1>
+            </section>
+            <section>
+                <h2>D'abord le conteneur</h2>
+                <pre><code class="html">&#x3C;!doctype html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;/html&#x3E;</code></pre>
+            </section>
+            <section>
+                <h2>Ensuite la tête</h2>
+                <pre><code class="html" data-noescape data-trim>
+&#x3C;!doctype html&#x3E;
+&#x3C;html&#x3E;
+<mark class="highlight-block">&#x3C;head&#x3E;
+&#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+&#x3C;title&#x3E;Mon premier document&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;</mark>
+&#x3C;/html&#x3E;
+                </code></pre>
+            </section>
+            <section>
+                <h2>Puis le corps</h2>
+                <pre><code class="html" data-noescape data-trim>
+&#x3C;!doctype html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;
+&#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+&#x3C;title&#x3E;Mon premier document&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+<mark class="highlight-block">&#x3C;body&#x3E;
+&#x3C;/body&#x3E;</mark>
+&#x3C;/html&#x3E;
+                </code></pre>
+            </section>
+            <section>
+                <h2>Et nous pouvons maintenant commencer à agrémenter la page</h2>
+                <pre><code class="html" data-noescape data-trim>
+&#x3C;body&#x3E;
+<mark class="highlight-block">    &#x3C;h1&#x3E;Ma super page&#x3C;/h1&#x3E;
+    &#x3C;h2&#x3E;Mon super sous-titre&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;Mon premier pragraphe o&#xF9; je peux ins&#xE9;rer les informations que je veux !&#x3C;/p&#x3E;
+    &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;Ma&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Super&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Liste&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;</mark>
+&#x3C;/body&#x3E;
+                </code></pre>
+            </section>
+        </section>
 	</div>
 </div>
 <script src="lib/js/head.min.js"></script>
